@@ -114,5 +114,26 @@ if ($Name -match "^NYC") {
 # 44 - POWERSHELL SCRIPTING LOOPING CONSTRUCTS 
 # ForEach, For, While / Until / Do
 
+#Not so efficient way of doing the foreach object command
+
+
+#1..10 | ForEach-Object { notepad.exe }
+
+Measure-Command {
+    Get-Process -name notepad |
+    ForEach-Object { $_.Kill() }
+}
+
+
+
+<#
+Measure-Command {
+$processes = Get-Process -Name notepad
+    foreach ($proc in $processes) {
+    $proc.kill()
+    }
+}
+#>
+
 
 
