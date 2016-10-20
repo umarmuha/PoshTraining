@@ -111,19 +111,19 @@ if ($Name -match "^NYC") {
 
 
 
-# 44 - POWERSHELL SCRIPTING LOOPING CONSTRUCTS 
+######################### 44 - POWERSHELL SCRIPTING LOOPING CONSTRUCTS ################################## 
 # ForEach, For, While / Until / Do
 
 #Not so efficient way of doing the foreach object command
 
-
+<#
 #1..10 | ForEach-Object { notepad.exe }
 
 Measure-Command {
     Get-Process -name notepad |
     ForEach-Object { $_.Kill() }
 }
-
+#>
 
 
 <#
@@ -134,6 +134,86 @@ $processes = Get-Process -Name notepad
     }
 }
 #>
+
+<#
+$array1 = "one", "two", "three", "four", "five"
+$array2 = "fred", "barney", "wilma", "betty", "pebbles"
+$string = "one day we saw two eat four"
+
+for ($x = 0; $x -lt $array1.Count; $x++) {
+    echo "Loop $x"
+    $string = $string -replace $array1[$x],$array2[$x]
+  
+}
+$string
+#>
+
+<#
+$array1 = "cbtnuggets.com", "gmail.com", "company.com"
+$array2 = "nuggetlab.com", "outlook.com", "compnay.pri"
+
+$emails = 'john@cbtnuggets.com',
+          'joe@gmail.com',
+          'fred@company.com'
+foreach ($email in $emails) {
+    
+for ($x = 0; $x -lt $array1.Count; $x++) {
+    $email = $email -replace $array1[$x],$array2[$x]
+  
+}
+ Write-Output $email
+}
+#>
+
+<#
+$existing = 'Server1', 'Server3', 'Server4', 'Server5', 'Server2'
+
+$candidate = 0
+
+do {
+    $candidate++
+    $possiblename = "Server$candidate"
+} while ($existing.Contains($possiblename))
+$possiblename
+#>
+
+<#
+$this = 5
+$that = 5
+while ($this -eq $that) {
+    Write-Host 'Hello'
+    $that++
+}
+#>
+
+###############################45 Powershell SCRIPTING Basic Function .... #################################################
+
+function Get-Computersysteminfo { 
+    Get-WmiObject -Class win32_computersystem -ComputerName localhost | 
+        Select-Object Name, Manufacturer, Model
+}
+Get-Computersysteminfo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
