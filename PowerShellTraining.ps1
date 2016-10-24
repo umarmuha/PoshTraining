@@ -195,7 +195,9 @@ function Get-Computersysteminfo {
 Get-Computersysteminfo
 
 
+########################47-Powershell SCRIPTING from Command to Script to function to module############################
 
+$env:PSModulePath #location where module are saved. Once in the User MyDocuments directory and the other where Microsoft saves there modules
 
 
 
