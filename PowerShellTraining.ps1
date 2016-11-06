@@ -219,9 +219,9 @@ param (
             }
 
         }
+        Write-Host "$properties"
     }
 
-Write-Host "$properties"
 
 
 
