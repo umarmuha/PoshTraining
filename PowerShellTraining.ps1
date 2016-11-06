@@ -217,9 +217,9 @@ param (
                             'Operating System Manufacturer' = $os.manufacturer;
                             'Operating System Version' = $os.version
             }
-
+Write-Host "$properties"
         }
-        Write-Host "$properties"
+        
     }
 
 
