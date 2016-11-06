@@ -213,13 +213,14 @@ param (
         foreach ($comp in $Computer) {    
             $proc = Get-WmiObject -Class win32_processor -ComputerName $Computer 
             $os   = Get-WmiObject -Class win32_operatingsystem -ComputerName $Computer
-
+        }
+    }
             $properties = @{'Processor Name'= $proc.Name;
                             'Operating System Manufacturer' = $os.manufacturer;
                             'Operating System Version' = $os.version
             }
-        }
-    }
+
+Write-Host "$properties"
 
 
 
