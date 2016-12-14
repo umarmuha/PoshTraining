@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BootDisks>
+  <Disks NodeType="Storage">
+    <Disk>
+      <Manufacturer>Intel</Manufacturer>
+      <DeviceId>*</DeviceId>
+      <Model>SSDSC2BX400G4R</Model>
+      <BusType>*</BusType>
+      <MediaType>SSD</MediaType>
+      <Size>400GB</Size>
+    </Disk>
+  </Disks>
+  <Disks NodeType="Compute">
+    <Disk>
+      <Manufacturer>Intel</Manufacturer>
+      <DeviceId>*</DeviceId>
+      <Model>SSDSC2BX400G4R</Model>
+      <BusType>*</BusType>
+      <MediaType>SSD</MediaType>
+      <Size>400GB</Size>
+    </Disk>
+  </Disks>
+</BootDisks>

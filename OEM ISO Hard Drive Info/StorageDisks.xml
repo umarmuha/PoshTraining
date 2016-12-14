@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>Intel</Manufacturer>
+        <Model>SSDSC2BA800G4R</Model>
+        <AllowedFirmware>
+          <Version>DL2B(1NGM2)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>Intel</Manufacturer>
+        <Model>Need model number for 1.2 TB S3710</Model>
+        <AllowedFirmware>
+          <Version>DL2B(1NGM2)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>Intel</Manufacturer>
+        <Model>SSDSC2BX016T4R</Model>
+        <AllowedFirmware>
+          <Version>DL2B(46CCY)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>Seagate</Manufacturer>
+        <Model>ST4000NM0035-1V4107</Model>
+        <AllowedFirmware>
+          <Version>DA03(G4XR3)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>Seagate</Manufacturer>
+        <Model>ST6000NM0115</Model>
+        <AllowedFirmware>
+          <Version>DA24(61WY3)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>Seagate</Manufacturer>
+        <Model>ST8000NM0055-1RM112</Model>
+        <AllowedFirmware>
+          <Version>PA27(7FNWK)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>HGST</Manufacturer>
+        <Model>HUS726040ALA614</Model>
+        <AllowedFirmware>
+          <Version>KN03(4PT9F)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>HGST</Manufacturer>
+        <Model>HUS726060ALE614</Model>
+        <AllowedFirmware>
+          <Version>KP06(1RKM0)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>HGST</Manufacturer>
+        <Model>HUH721008ALE600</Model>
+        <AllowedFirmware>
+          <Version>LT03(34CVM)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>Toshiba</Manufacturer>
+        <Model>MG04ACA400N</Model>
+        <AllowedFirmware>
+          <Version>FJ2D(W5CHR)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
+
+<StorageDisks>
+  <Components>
+    <Disks>
+      <Disk>
+        <Manufacturer>Toshiba</Manufacturer>
+        <Model>MG04ACA600E</Model>
+        <AllowedFirmware>
+          <Version>FS6D(MCVYM)</Version>
+        </AllowedFirmware>
+      </Disk>
+    </Disks>
+    <Cache>
+    </Cache>
+  </Components>
+</StorageDisks>
