@@ -201,7 +201,7 @@
 
     # $env:PSModulePath #location where module are saved. Once in the User MyDocuments directory and the other where Microsoft saves there modules
 
-
+<#
 
     ##############50 LAB-E################
 
@@ -215,12 +215,22 @@ param (
             $os   = Get-WmiObject -Class win32_operatingsystem -ComputerName $Computer
             $properties = @{'Processor Name'= $proc.Name;
                             'Operating System Manufacturer' = $os.manufacturer;
-                            'Operating System Version' = $os.version
-            }
-Write-Host "$properties"
-        }
-        
+                            'Operating System Version' = $os.version}
+New-Object -TypeName psobject -Property $properties
+        }        
     }
+Get-ComputerInfo
+
+#>
+
+# CHAPTER 21 You call this scripting #
+
+Get-WmiObject -class win32_LogicalDisk -ComputerName localhost -Filter "drivetype=3" | 
+                Sort-Object -Property DeviceID | 
+                Format-Table -Property DeviceID,
+                @{label='FreeSpace(MB)';expression={$_.FreeSpace / 1MB -as [int]}},
+                @{label='Size(GB)';expression={$_.Size /1GB -as [int]}},
+                @{label='%Free';expression={$_.FreeSpace / $_.Size * 100 -as [int]}}
 
 
 
